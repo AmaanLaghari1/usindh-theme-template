@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USindh - Home</title>
+    <link rel="stylesheet" href="./assets/css/font-6/css/all.css">
+    <link rel="stylesheet" href="./assets/css/google-fonts.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+        <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+    .swiper-pagination {
+        position: static !important;
+    }
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #777;
+      border-radius: 0;
+      opacity: 1;
+      background: transparent !important;
+    }
+    
+    .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #003294 !important;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="bg-primary">
+        <nav class="navbar navbar-primary navbar-dark navbar-expand-lg position-relative">
+            <div class="container-fluid logo-container bg-primary" style="z-index: 1000;">
+                <div class="col-md-5 text-lg-center">
+                    <a href="./assets/index.html" class="navbar-brand m-2 mt-3">
+                        <img src="./assets/images/usindh-logo-white.png" class="logo" alt="USindh Logo">
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 me-auto" id="search-bar">
+                    <form class="d-flex w-100 position-relative rounded-5 mb-1" role="search">
+                        <input class="form-control rounded-5 me-2 search-box" type="search" placeholder="Ex: Admissions" aria-label="Search">
+                        <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
+                            <img class="d-block m-auto" src="./assets/images/search-icon.png" alt="search icon image">
+                        </button>
+                    </form>
+                </div>
+                <button class="navbar-toggler position-absolute" style="top: 5px; right: 10px;" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <nav class="py-3 bg-primary navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse bg-primary" id="nav-list" style="z-index: 100;">
+                    <ul class="navbar-nav small d-lg-flex flex-wrap justify-content-evenly w-100">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link active text-light mx-2">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light mx-2">
+                                NEWS
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ABOUT
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="./vision.html">Vision & Mission</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ACADEMICS
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ADMINISTRATION
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                CAMPUSES
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                RESEARCH JOURNALS
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                LMS
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                FACILITIES
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                GRADING POLICY
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                FACULTIES
+                            </a>
+                            <ul class="dropdown-menu overflow-hidden p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- BANNER SECTION START -->
+    <section class="banner-container bg-primary position-relative">
+        <div class="container px-2">
+            <div class="text-end">
+                <ul class="list-unstyled d-flex justify-content-end">
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/instagram-vector.png" alt="">
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/facebook-vector.png" alt="">
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/twitter-vector.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="position-relative">
+                <i class="fa-solid fa-arrow-right position-absolute end-0 bottom-0 p-2 fs-3"></i>
+                <span class="position-absolute rounded-circle circle-shape-sm"></span>
+                <span class="position-absolute rounded-circle circle-shape-lg"></span>
+                <img src="./assets/images/banner.png" alt="banner image" class="img-fluid" style="position: relative; z-index: 20;">
+
+                <span class="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-100" style="z-index: 30;">
+                    <div class="bg-info square-shape"></div>
+                    <h1 class="banner-title display-6 position-absolute ps-5 text-light mx-2 m-auto">Welcome to <span class="fw-bold">University</span><br/> of Sindh JAMSHORO</h1>
+                </span>
+                
+            </div>
+            <div class="d-flex bg-danger" style="height: 3rem;">
+                <div class="col-3 bg-white h-100 d-flex align-items-end gap-2">
+                    <div class="p-1 bg-info"></div>
+                    <div class="p-1 bg-info"></div>
+                    <div class="p-1 bg-primary w-25"></div>
+                </div>
+                <div class="col-9 headline d-flex justify-content-between align-items-center px-3 bg-info h-100 text-light fw-bold">
+                    <p class="lead my-auto mx-3"><span class="fw-bold">250,998</span> people are learning with us</p>
+                    <a href="#" class="text-light text-decoration-none me-3">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- SECTION BREAK SPACE -->
+    <div class="section-gap"></div>
+    <div class="section-gap"></div>
+    <div class="section-gap"></div>
+    <!-- SECTION BREAK SPACE END -->
+
+    <!-- MAIN SECTION START -->
+    <main class="container-fluid p-0 position-relative">
+        <section id="About" class="container">
+            <h1 class="section-title text-secondary fw-bolder my-2 py-3">ABOUT</h1>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex h-100">
+                        <div class="bg-info px-4 h-25"></div>
+                        <img src="./assets/images/vision_and_mission_tumbnail.png" alt="" class="img-fluid w-lg-75 h-100">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="d-flex align-items-center h-100 px-5">
+                        <div>
+                            <h3 class="display-5 text-black fw-bold">The University of Sindh, the oldest University of the country!</h3>
+                            <div class="py-3 lead">JAMSHORO</div>
+                            <p class="pt-3">
+                                The University of Sindh, the oldest University of the country, was constituted under the University of Sindh Act. No. XVII of 1947 passed by the Legislative Assembly of Sindh. The Act was subsequently revised and modified in 1961 and later. The Act of 1972 under which the University is presently functioning provided for greater autonomy and representation of teachers.
+                                <br/>
+                                <a href="#" class="text-decoration-none text-black">Know More →</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Career-Opportunities" class="w-100 p-5 bg-info-subtle">
+            <div class="container d-flex flex-wrap gap-1 justify-content-center align-items-center p-0">
+                <div class="icon-card card d-flex flex-column align-items-center bg-info-subtle border border-0">
+                    <div class="img-icon-box p-3 bg-white rounded-circle">
+                        <img src="./assets/images/rocket_icon_img.png" alt="Rocket icon image" class="w-50">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary bg-info-subtle text-center fw-normal">
+                            Career Opportuninities
+                        </h5>
+                        <div class="card-text text-center small px-2">
+                            Recruitments in University of Sindh and it's Campuses
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="icon-card card d-flex flex-column align-items-center bg-info-subtle border border-0">
+                    <div class="img-icon-box p-3 bg-white rounded-circle">
+                        <img src="./assets/images/book_reading_icon_img.png" alt="Rocket icon image" class="w-50">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary bg-info-subtle text-center fw-normal">
+                            Career Opportuninities
+                        </h5>
+                        <div class="card-text text-center small px-2">
+                            Recruitments in University of Sindh and it's Campuses
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="icon-card card d-flex flex-column align-items-center bg-info-subtle border border-0">
+                    <div class="img-icon-box p-3 bg-white rounded-circle">
+                        <img src="./assets/images/search_setting_icon_img.png" alt="Rocket icon image" class="w-50">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary bg-info-subtle text-center fw-normal">
+                            Career Opportuninities
+                        </h5>
+                        <div class="card-text text-center small px-2">
+                            Recruitments in University of Sindh and it's Campuses
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="icon-card card d-flex flex-column align-items-center bg-info-subtle border border-0">
+                    <div class="img-icon-box p-3 bg-white rounded-circle">
+                        <img src="./assets/images/play_book_icon_img.png" alt="Rocket icon image" class="w-50">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary bg-info-subtle text-center fw-normal">
+                            Career Opportuninities
+                        </h5>
+                        <div class="card-text text-center small px-2">
+                            Recruitments in University of Sindh and it's Campuses
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="Message" class="container">
+            <h1 class="section-title text-secondary fw-bolder my-2 py-3">MESSAGE</h1>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex h-100">
+                        <div class="bg-info px-4 h-25"></div>
+                        <img src="./assets/images/vc_img.png" alt="" class="img-fluid w-lg-75 h-100">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="d-flex align-items-center h-100 px-5">
+                        <div>
+                            <h3 class="display-5 text-black fw-bold">The Vice Chancellor Message</h3>
+                            <div class="py-3 lead">Dear Students</div>
+                            <p class="pt-3">
+                                It gives me immense pleasure to welcome the fresh batch of students who are exuberant and eager to join University of Sindh, Jamshoro. I know that your shining faces and young minds are ready to start an exciting journey of academic excellence and personal growth at one of Sindh’s premier institutions of Higher Education. I hope and pray that this new phase of life will turn out to be rewarding and satisfying for you and for your parents. This University is fully capable of turning your dreams into reality with the cutting edge curricula and highly qualified and trained teachers. The university is known for producing high quality graduates and for its service to the nation. It has become a place of excellence in Pakistan in higher education and scientific research. These are the results of sustained efforts the university has made over the years towards faculty development, and creativity and innovation.
+                                <br/>
+                                <a href="#" class="text-decoration-none text-black">Know More →</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-gap"></div>
+        <div class="section-gap"></div>
+
+        <section id="Admissions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <h1 class="section-title text-secondary fw-bolder my-2 py-3 w-100">ADMISSIONS 2024</h1>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-end">
+                        <div class="d-flex align-items-center">
+                            <div class="fa fa-arrow-left swiper-left-arrow-btn z-1 fs-2" style="color: #003294;"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="fa fa-arrow-right swiper-right-arrow-btn z-1 fs-2" style="color: #003294;"></div>
+                        </div>
+                        <a href="#" class="btn-link text-decoration-none text-info lead">See all</a>
+                    </div>
+                </div>
+
+                <div class="swiper mySwiper d-flex flex-wrap gap-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0" style="width: 16rem;">
+                                <img src="./assets/images/scholar_cap.png" style="height: 12rem;" alt="" class="card-img-top">
+                                <div class="card-body p-0 py-2">
+                                    <h5 class="card-title">
+                                        Bachelor & Master Programs Catalogue 2023
+                                    </h5>
+                                    <a href="#" class="btn-link text-info-emphasis text-decoration-none">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0" style="width: 16rem;">
+                                <img src="./assets/images/scholar_cap.png" style="height: 12rem;" alt="" class="card-img-top">
+                                <div class="card-body p-0 py-2">
+                                    <h5 class="card-title">
+                                        Bachelor & Master Programs Catalogue 2023
+                                    </h5>
+                                    <a href="#" class="btn-link text-info-emphasis text-decoration-none">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0" style="width: 16rem;">
+                                <img src="./assets/images/scholar_cap.png" style="height: 12rem;" alt="" class="card-img-top">
+                                <div class="card-body p-0 py-2">
+                                    <h5 class="card-title">
+                                        Bachelor & Master Programs Catalogue 2023
+                                    </h5>
+                                    <a href="#" class="btn-link text-info-emphasis text-decoration-none">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0" style="width: 16rem;">
+                                <img src="./assets/images/scholar_cap.png" style="height: 12rem;" alt="" class="card-img-top">
+                                <div class="card-body p-0 py-2">
+                                    <h5 class="card-title">
+                                        Bachelor & Master Programs Catalogue 2023
+                                    </h5>
+                                    <a href="#" class="btn-link text-info-emphasis text-decoration-none">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0" style="width: 16rem;">
+                                <img src="./assets/images/scholar_cap.png" style="height: 12rem;" alt="" class="card-img-top">
+                                <div class="card-body p-0 py-2">
+                                    <h5 class="card-title">
+                                        Bachelor & Master Programs Catalogue 2023
+                                    </h5>
+                                    <a href="#" class="btn-link text-info-emphasis text-decoration-none">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container-fluid text-light bg-info p-3 py-5 position-relative">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-3 p-2">
+                        <img src="./assets/images/usindh-logo-white.png" style="width: 10rem;" alt="USindh Logo">
+                        <p class="small py-3">
+                            The University of Sindh, the oldest University of the country, was constituted under the University of Sindh Act. No. XVII of 1947 passed by the Legislative Assembly of Sindh. The Act was subsequently revised and modified in 1961 and later.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Quick Links</h6>
+                            <ul class="list-unstyled small">
+                                <li><a class="text-decoration-none" href="#">Convocation 2019-2023</a></li>
+                                <li><a class="text-decoration-none" href="#">Sindh University Testing</a></li>
+                                <li><a class="text-decoration-none" href="#">Centre Office of Research & Innovation</a></li>
+                                <li><a class="text-decoration-none" href="#">Commercialisation Quality Enhancement</a></li>
+                                <li><a class="text-decoration-none" href="#">Cell Director of Admissions</a></li>
+                                <li><a class="text-decoration-none" href="#">Knowledge</a></li>
+                                <li><a class="text-decoration-none" href="#">Corridor Spectrum Magazine</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Connect</h6>
+                            <ul class="list-unstyled small">
+                                <li><a class="text-decoration-none" href="#">News & Events</a></li>
+                                <li><a class="text-decoration-none" href="#">Sindh University Journol Online</a></li>
+                                <li><a class="text-decoration-none" href="#">Prospectus 2024</a></li>
+                                <li><a class="text-decoration-none" href="#">Career Opportnities</a></li>
+                            </ul>
+
+                            <div class="py-2">
+                                <div class="social-links-container">
+                                    <ul class="list-unstyled d-flex">
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/instagram-vector.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/facebook-vector.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/twitter-vector.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Contact</h6>
+                            <ul class="list-unstyled small">
+                                <li class="d-flex align-items-center">
+                                    <div class="p-2 ps-0">
+                                        <i class="fa-solid fa-phone" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="#">
+                                        92-22-9213-181 (90)
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="px-2 ps-0 align-self-start">
+                                        <i class="fa-solid fa-location-dot" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="#">
+                                        University of Sindh,Allama I.I. Kazi Campus,Jamshoro-76080, Sindh, Pakistan
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="p-2 ps-0">
+                                        <i class="fa-solid fa-envelope" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="#">
+                                        info@usindh.edu.pk
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small bg-primary d-flex flex-wrap justify-content-around align-items-center text-light p-4">
+            <small>All rights Reserved © University Of Sindh 2024</small>
+            <small>Privacy Policy | Terms of Services</small>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<script src="./assets/js/popper.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script>
+    // Wait for the whole page to load (including images)
+    window.onload = function() {
+        // Hide the preloader once the page is fully loaded
+        document.getElementById("preloader").style.display = "none";
+    };
+</script>
+<script>
+    $(document).ready(function(){
+        $(".nav-link").click(function(){
+        if(!$(this).hasClass('active')){
+            $(".nav-link").removeClass('active')
+
+
+            $(this).addClass('active')
+            
+        }
+        })
+
+        $(window).on("scroll", function () {
+            if ($(this).scrollTop() > 200) {
+                $("#nav-list").addClass("fixed-top pt-5");
+                if($(this).width() < 998){
+                    $(".logo-container").addClass("fixed-top");
+                    $("#search-bar").addClass("d-none");
+                }
+            } else {
+                $("#nav-list").removeClass("fixed-top pt-5");
+                $(".logo-container").removeClass("fixed-top");
+                $("#search-bar").removeClass("d-none");
+            }
+        });
+    })
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+    },
+    slidesPerView: 1,  // Default for small screens
+    spaceBetween: 10,  // Space between slides
+    breakpoints: {
+    // For medium screens (e.g. tablets)
+    768: {
+        slidesPerView: 3,  // 3 slides on medium screens
+    },
+    // For large screens (e.g. desktops)
+    1024: {
+        slidesPerView: 4,  // 4 slides on large screens
+    }
+    }
+});
+
+// Add event listener to the right arrow button
+document.querySelector('.swiper-right-arrow-btn').addEventListener('click', function () {
+    swiper.slideNext(); // Move to the next slide
+});
+document.querySelector('.swiper-left-arrow-btn').addEventListener('click', function () {
+    swiper.slidePrev(); // Move to the next slide
+});
+</script>
+</html>
