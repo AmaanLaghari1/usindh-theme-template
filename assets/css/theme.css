@@ -24,6 +24,7 @@ html, body {
     --info: #003294;
     --info-subtle: #EBF9FF;
     --info-emphasis: #0292D3;
+    --link-color: #00B2FF;
 }
 
 .container-fluid {
@@ -199,6 +200,14 @@ html, body {
 .section-title {
     letter-spacing: 3px;
     opacity: .5;
+}
+
+footer a {
+    color: var(--link-color) !important;
+}
+
+footer a:hover {
+    color: var(--info-emphasis) !important;
 }
 
 @media only screen and (max-width: 998px) {
