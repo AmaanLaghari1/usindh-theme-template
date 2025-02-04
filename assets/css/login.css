@@ -11,10 +11,6 @@ html, body {
     display: none;
 }
 
-.search-box::placeholder {
-    color: #777 !important;
-}
-
 [class*="primary"] {
     background-color: #10203F !important;
     border-color: #10203F !important;
@@ -29,16 +25,17 @@ main {
     min-height: 100vh;
 }
 
-.section-height {
-    height: 95vh;
-}
-
 .bg-light {
     background-color: rgba(0, 51, 102, .8) !important;
 }
 
 .logo {
     width: 15rem;
+}
+
+.error {
+    color: red;
+    font-size: .8em;
 }
 
 @media only screen and (max-width: 998px) {
@@ -48,7 +45,7 @@ main {
     }
 
     .section-height {
-        height: 97vh !important;
+        height: auto !important;
     }
 }
 
