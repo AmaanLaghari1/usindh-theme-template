@@ -22,20 +22,13 @@
     <!-- HEADER START -->
     <header class="bg-primary">
         <nav class="navbar navbar-primary navbar-dark navbar-expand-lg position-relative">
-            <div class="container-fluid logo-container bg-primary" style="z-index: 1000;">
+            <div class="container-fluid logo-container bg-primary">
                 <div class="col-md-5 text-lg-center">
                     <a href="./assets/index.html" class="navbar-brand m-2 mt-3">
                         <img src="./assets/images/usindh-logo-white.png" class="logo" alt="USindh Logo">
                     </a>
                 </div>
-                <div class="col-12 col-md-4 me-auto" id="search-bar">
-                    <form class="d-flex w-100 position-relative rounded-5 mb-1" role="search">
-                        <input class="form-control rounded-5 me-2 search-box" type="search" placeholder="Ex: Admissions" aria-label="Search">
-                        <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
-                            <img class="d-block m-auto" src="./assets/images/search-icon.png" alt="search icon image">
-                        </button>
-                    </form>
-                </div>
+                
                 <button class="navbar-toggler position-absolute" style="top: 5px; right: 10px;" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,7 +36,15 @@
         </nav>
         <nav class="py-3 bg-primary navbar-expand-lg">
             <div class="container">
-                <div class="collapse navbar-collapse bg-primary" id="nav-list" style="z-index: 100;">
+                <div class="collapse navbar-collapse bg-primary" id="nav-list">
+                    <div class="col-12 col-lg-4 me-auto" id="search-bar">
+                        <form class="d-flex w-100 position-relative rounded-5 mb-1" role="search">
+                            <input class="form-control rounded-5 me-2 search-box" type="search" placeholder="Ex: Admissions" aria-label="Search">
+                            <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
+                                <img class="d-block m-auto" src="./assets/images/search-icon.png" alt="search icon image">
+                            </button>
+                        </form>
+                    </div>
                     <ul class="navbar-nav small d-lg-flex flex-wrap justify-content-evenly w-100">
                         <li class="nav-item">
                             <a href="./index.html" class="nav-link active text-light mx-2">
@@ -430,18 +431,19 @@
         })
 
         $(window).on("scroll", function () {
-            if ($(this).scrollTop() > 200) {
-                $("#nav-list").addClass("fixed-top pt-5");
-                if($(this).width() < 998){
-                    $(".logo-container").addClass("fixed-top");
-                    $("#search-bar").addClass("d-none");
-                }
-            } else {
-                $("#nav-list").removeClass("fixed-top pt-5");
-                $(".logo-container").removeClass("fixed-top");
-                $("#search-bar").removeClass("d-none");
+        if ($(this).scrollTop() > 20) {
+            $("#nav-list").addClass("fixed-top pt-5");
+            if($(this).width() < 998){
+                $("#nav-list").removeClass("pt-5");
+                $("#search-bar").addClass("pt-5 my-2");
+                $(".logo-container").addClass("fixed-top");
             }
-        });
+        } else {
+            $("#nav-list").removeClass("fixed-top pt-5");
+            $("#search-bar").removeClass("pt-5 my-2");
+            $(".logo-container").removeClass("fixed-top");
+        }
+    });
     })
 </script>
 </html>

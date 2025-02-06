@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+
+    <style>
+        .card-hover-shadow:hover {
+            scale: 100.9%;
+            box-shadow: #fff 0px 0px 0px 0px, #fff 0px 0px 0px 0px, #fff 0px 0px 0px 0px, #fff 0px 0px 0px 0px, rgba(255, 255, 255, .35) 0px 5px 10px 0px;
+            transition: .3s;
+        }
+    </style>
 </head>
 <body>
     <!-- HEADER START -->
     <header class="bg-primary">
         <nav class="navbar navbar-primary navbar-dark navbar-expand-lg position-relative">
-            <div class="container-fluid logo-container bg-primary" style="z-index: 1000;">
+            <div class="container-fluid logo-container bg-primary">
                 <div class="col-md-5 text-lg-center">
                     <a href="./assets/index.html" class="navbar-brand m-2 mt-3">
                         <img src="./assets/images/usindh-logo-white.png" class="logo" alt="USindh Logo">
                     </a>
                 </div>
-                <div class="col-12 col-md-4 me-auto" id="search-bar">
-                    <form class="d-flex w-100 position-relative rounded-5 mb-1" role="search">
-                        <input class="form-control rounded-5 me-2 search-box" type="search" placeholder="Ex: Admissions" aria-label="Search">
-                        <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
-                            <img class="d-block m-auto" src="./assets/images/search-icon.png" alt="search icon image">
-                        </button>
-                    </form>
-                </div>
+                
                 <button class="navbar-toggler position-absolute" style="top: 5px; right: 10px;" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,7 +37,15 @@
         </nav>
         <nav class="py-3 bg-primary navbar-expand-lg">
             <div class="container">
-                <div class="collapse navbar-collapse bg-primary" id="nav-list" style="z-index: 100;">
+                <div class="collapse navbar-collapse bg-primary" id="nav-list">
+                    <div class="col-12 col-lg-4 me-auto" id="search-bar">
+                        <form class="d-flex w-100 position-relative rounded-5 mb-1" role="search">
+                            <input class="form-control rounded-5 me-2 search-box" type="search" placeholder="Ex: Admissions" aria-label="Search">
+                            <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
+                                <img class="d-block m-auto" src="./assets/images/search-icon.png" alt="search icon image">
+                            </button>
+                        </form>
+                    </div>
                     <ul class="navbar-nav small d-lg-flex flex-wrap justify-content-evenly w-100">
                         <li class="nav-item">
                             <a href="./index.html" class="nav-link active text-light mx-2">
@@ -247,7 +256,7 @@
     <!-- MAIN SECTION START -->
     <main class="container-fluid p-0 position-relative">
         <section id="About" class="container">
-            <h1 class="section-title text-secondary fw-bolder my-2 py-3">ABOUT</h1>
+            <h1 class="section-title fw-bolder my-2 py-3">ABOUT</h1>
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="d-flex h-100">
@@ -363,7 +372,7 @@
         </section>
 
         <section id="Message" class="container">
-            <h1 class="section-title text-secondary fw-bolder my-2 py-3">MESSAGE</h1>
+            <h1 class="section-title fw-bolder my-2 py-3">MESSAGE</h1>
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="d-flex h-100">
@@ -394,7 +403,7 @@
                 <div class="SwiperSlider swiper d-flex flex-wrap gap-3">
                     <div class="w-100 row">
                         <div class="col-12 col-lg-7">
-                            <h1 class="section-title text-secondary fw-bolder my-2 py-3 w-100">ADMISSIONS 2024</h1>
+                            <h1 class="section-title fw-bolder my-2 py-3 w-100">ADMISSIONS 2024</h1>
                         </div>
                         <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-end px-3">
                             <div class="d-flex align-items-center">
@@ -407,7 +416,7 @@
                         </div>
                     </div>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide card-hover-shadow card-hover-shadow">
                             <div class="card border-0 rounded-0">
                                 <img src="./assets/images/scholar_cap.png" alt="" class="card-img-top rounded-0">
                                 <div class="card-body p-0 py-2">
@@ -418,7 +427,7 @@
                                 <a href="#" class="btn-link pt-auto text-info-emphasis text-decoration-none">View Details →</a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide card-hover-shadow">
                             <div class="card border-0 rounded-0">
                                 <img src="./assets/images/usindh_statue_of_wisdom.png" alt="" class="card-img-top rounded-0">
                                 <div class="card-body p-0 py-2">
@@ -431,7 +440,7 @@
                                 <a href="#" class="btn-link pt-auto text-info-emphasis text-decoration-none">View Details →</a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide card-hover-shadow">
                             <div class="card border-0 rounded-0">
                                 <img src="./assets/images/library.png" alt="" class="card-img-top rounded-0">
                                 <div class="card-body p-0 py-2">
@@ -443,7 +452,7 @@
                                 <a href="#" class="btn-link pt-auto text-info-emphasis text-decoration-none">View Details →</a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide card-hover-shadow">
                             <div class="card border-0 rounded-0">
                                 <img src="./assets/images/degree.png" alt="" class="card-img-top rounded-0">
                                 <div class="card-body p-0 py-2">
@@ -455,7 +464,7 @@
                                 <a href="#" class="btn-link pt-auto text-info-emphasis text-decoration-none">View Details →</a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide card-hover-shadow">
                             <div class="card border-0 rounded-0">
                                 <img src="./assets/images/degree.png" alt="" class="card-img-top rounded-0">
                                 <div class="card-body p-0 py-2">
@@ -482,7 +491,7 @@
                 <div class="SwiperSlider swiper d-flex flex-wrap gap-3">
                     <div class="w-100 row">
                         <div class="col-12">
-                            <h1 class="section-title text-secondary fw-bolder my-2 py-3 w-100">ANNOUNCEMENTS</h1>
+                            <h1 class="section-title fw-bolder my-2 py-3 w-100">ANNOUNCEMENTS</h1>
                         </div>
                         <div class="col-12">
                             <div class="my-2 w-25 ms-auto d-flex justify-content-end gap-2 position-relative">
@@ -497,7 +506,7 @@
                             <div class="card border-0 rounded-0 bg-info position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
-                                    <img src="./assets/images/books.png" alt="" class="card-img-top w-75 rounded-0">
+                                    <img src="./assets/images/books.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                 </div>
                                 <div class="card-body px-4 py-2">
@@ -512,7 +521,7 @@
                             <div class="card border-0 rounded-0 bg-info position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
-                                    <img src="./assets/images/tossing_mortarbords.png" alt="" class="card-img-top w-75 rounded-0">
+                                    <img src="./assets/images/tossing_mortarbords.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                 </div>
                                 <div class="card-body px-4 py-2">
@@ -527,7 +536,7 @@
                             <div class="card border-0 rounded-0 bg-info position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
-                                    <img src="./assets/images/tossing_mortarbords.png" alt="" class="card-img-top w-75 rounded-0">
+                                    <img src="./assets/images/tossing_mortarbords.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                 </div>
                                 <div class="card-body px-4 py-2">
@@ -542,7 +551,7 @@
                             <div class="card border-0 rounded-0 bg-info position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
-                                    <img src="./assets/images/person_reading.png" alt="" class="card-img-top w-75 rounded-0">
+                                    <img src="./assets/images/person_reading.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                 </div>
                                 <div class="card-body px-4 py-2">
@@ -557,7 +566,7 @@
                             <div class="card border-0 rounded-0 bg-info position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
-                                    <img src="./assets/images/books.png" alt="" class="card-img-top w-75 rounded-0">
+                                    <img src="./assets/images/books.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                 </div>
                                 <div class="card-body px-4 py-2">
@@ -580,7 +589,7 @@
         <div class="section-gap"></div>
 
         <section id="Officials">
-            <h1 class="section-title fw-bold text-center my-3 mb-5">
+            <h1 class="section-title fw-bolder text-center my-3 mb-5">
                 MEET OUR OFFICIALS
             </h1>
             <div class="container my-3">
@@ -645,12 +654,12 @@
         <div class="section-gap"></div>
 
         <section id="News">
-            <h1 class="section-title fw-bold text-center my-3 mb-5">
+            <h1 class="section-title fw-bolder text-center my-3 mb-5">
                 NEWS AND EVENTS
             </h1>
             <div class="container my-3">
-                <div class="mx-auto d-flex flex-wrap justify-content-center align-items-start gap-3">
-                    <div class="card d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
+                <div class="mx-auto d-flex flex-wrap justify-content-center align-items-start gap-4">
+                    <div class="card card-hover-shadow d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
                         <img src="./assets/images/news-1.png" class="news-img border-0 rounded-0" />
                         <div class="card-body p-1">
                             <div class="card-text d-flex justify-content-between">
@@ -665,7 +674,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
+                    <div class="card card-hover-shadow d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
                         <img src="./assets/images/news-2.png" class="news-img border-0 rounded-0" />
                         <div class="card-body p-1">
                             <div class="card-text d-flex justify-content-between">
@@ -680,7 +689,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
+                    <div class="card card-hover-shadow d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
                         <img src="./assets/images/news-3.png" class="news-img border-0 rounded-0" />
                         <div class="card-body p-1">
                             <div class="card-text d-flex justify-content-between">
@@ -695,7 +704,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
+                    <div class="card card-hover-shadow d-flex flex-column justify-content-center align-items-center border-0 p-3 shadow bg-white rounded" style="width: 12rem;">
                         <img src="./assets/images/news-4.png" class="news-img border-0 rounded-0" />
                         <div class="card-body p-1">
                             <div class="card-text d-flex justify-content-between">
@@ -719,7 +728,7 @@
 
         <section id="Gallery" class="bg-info-subtle">
             <div class="section-gap"></div>
-            <h1 class="section-title fw-bold text-center my-3 mb-5">
+            <h1 class="section-title fw-bolder text-center my-3 mb-5">
                 OUR GALLERY
             </h1>
             <div class="gallery-container container d-flex">
@@ -868,18 +877,20 @@ $(document).ready(function(){
     })
 
     $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 200) {
+        if ($(this).scrollTop() > 20) {
             $("#nav-list").addClass("fixed-top pt-5");
             if($(this).width() < 998){
+                $("#nav-list").removeClass("pt-5");
+                $("#search-bar").addClass("pt-5 my-2");
                 $(".logo-container").addClass("fixed-top");
-                $("#search-bar").addClass("d-none");
             }
         } else {
             $("#nav-list").removeClass("fixed-top pt-5");
+            $("#search-bar").removeClass("pt-5 my-2");
             $(".logo-container").removeClass("fixed-top");
-            $("#search-bar").removeClass("d-none");
         }
     });
+
     
     // Swiper Initialization
     $(".SwiperSlider").each(function() {

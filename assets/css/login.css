@@ -2,6 +2,16 @@
     box-sizing: border-box !important;
 }
 
+:root {
+    --primary: #034078;
+    --primary-subtle: #1ea8e4;
+    --secondary: #BCD8C1;
+    --secondary-subtle: #247BA0;
+    --info: #149911;
+    --info-subtle: #EBF9FF;
+    --info-emphasis: #1EFC1E;
+}
+
 html, body {
     overflow: hidden !important;
     margin: 0;
@@ -12,13 +22,13 @@ html, body {
 }
 
 [class*="primary"] {
-    background-color: #10203F !important;
-    border-color: #10203F !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
 }
 
 [class*="info"] {
-    background-color: #00B2FF !important;
-    border-color: #00B2FF !important;
+    background-color: var(--info) !important;
+    border-color: var(--info) !important;
 }
 
 main {
