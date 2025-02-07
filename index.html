@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./assets/css/home.css">
 
     <style>
+        .card {
+            min-height: 19rem !important;
+        }
+
         .card-hover-shadow:hover {
             scale: 100.9%;
             box-shadow: #fff 0px 0px 0px 0px, #fff 0px 0px 0px 0px, #fff 0px 0px 0px 0px, #fff 0px 0px 0px 0px, rgba(255, 255, 255, .35) 0px 5px 10px 0px;
@@ -483,10 +487,10 @@
 
         <div class="section-gap"></div>
 
-        <section id="Announcements" class="bg-info py-3 pb-5 position-relative">
+        <section id="Announcements" class="bg-primary py-3 pb-5 position-relative">
             <div class="container">   
-                <div class="outer-circle-shape position-absolute" style="right: 5%; top: 5%;">
-                    <div class="inner-circle-shape"></div>
+                <div class="outer-circle-shape position-absolute border-primary-subtle" style="right: 5%; top: 5%;">
+                    <div class="inner-circle-shape bg-primary-subtle"></div>
                 </div>
                 <div class="SwiperSlider swiper d-flex flex-wrap gap-3">
                     <div class="w-100 row">
@@ -503,7 +507,7 @@
                     </div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="card border-0 rounded-0 bg-info position-relative">
+                            <div class="card border-0 rounded-0 bg-primary position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                     <img src="./assets/images/books.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
@@ -518,7 +522,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card border-0 rounded-0 bg-info position-relative">
+                            <div class="card border-0 rounded-0 bg-primary position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                     <img src="./assets/images/tossing_mortarbords.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
@@ -533,7 +537,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card border-0 rounded-0 bg-info position-relative">
+                            <div class="card border-0 rounded-0 bg-primary position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                     <img src="./assets/images/tossing_mortarbords.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
@@ -548,7 +552,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card border-0 rounded-0 bg-info position-relative">
+                            <div class="card border-0 rounded-0 bg-primary position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                     <img src="./assets/images/person_reading.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
@@ -563,7 +567,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card border-0 rounded-0 bg-info position-relative">
+                            <div class="card border-0 rounded-0 bg-primary position-relative">
                                 <div class="w-100 position-relative d-flex justify-content-center">
                                     <div class="p-2 bg-secondary-subtle my-3 opacity-50"></div>
                                     <img src="./assets/images/books.png" alt="" class="card-img-top card-hover-shadow w-75 rounded-0">
@@ -758,7 +762,7 @@
 
     <!-- FOOTER START -->
     <footer>
-        <div class="container-fluid text-light bg-info p-3 py-5 position-relative">
+        <div class="container-fluid text-light bg-primary-subtle p-3 py-5 position-relative">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12 col-md-3 p-2">
@@ -881,12 +885,12 @@ $(document).ready(function(){
             $("#nav-list").addClass("fixed-top pt-5");
             if($(this).width() < 998){
                 $("#nav-list").removeClass("pt-5");
-                $("#search-bar").addClass("pt-5 my-2");
+                $("#search-bar").addClass("pt-5 mt-3");
                 $(".logo-container").addClass("fixed-top");
             }
         } else {
             $("#nav-list").removeClass("fixed-top pt-5");
-            $("#search-bar").removeClass("pt-5 my-2");
+            $("#search-bar").removeClass("pt-5 mt-3");
             $(".logo-container").removeClass("fixed-top");
         }
     });
@@ -910,6 +914,7 @@ $(document).ready(function(){
             prevEl: swiperContainer.find(".swiper-arrow-left-btn")[0],
             },
             slidesPerView: slidesPerView,
+            autoplay: true,
             spaceBetween: 10,
             breakpoints: {
                 768: {

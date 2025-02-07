@@ -18,9 +18,9 @@ html, body {
 
 :root {
     --primary: #034078;
-    --primary-subtle: #1ea8e4;
+    --primary-subtle: #2257BF;
     --secondary: #BCD8C1;
-    --secondary-subtle: #247BA0;
+    --secondary-subtle: #359AB9;
     --info: #149911;
     --info-subtle: #EBF9FF;
     --info-emphasis: #1EFC1E;
@@ -73,6 +73,15 @@ html, body {
 .bg-primary {
     background-color: var(--primary) !important;
     border-color: var(--primary) !important;
+}
+
+.bg-primary-subtle {
+    background-color: var(--primary-subtle) !important;
+    border-color: var(--primary-subtle) !important;
+}
+
+.border-primary-subtle {
+    border-color: var(--primary-subtle) !important;
 }
 
 .bg-secondary {
@@ -188,7 +197,7 @@ html, body {
     height: 5rem; 
     width: 5rem; 
     z-index: 3; 
-    background-color: var(--info);
+    background-color: var(--primary-subtle);
     opacity: .4;
 }
 
@@ -198,7 +207,7 @@ html, body {
     height: 12rem; 
     width: 12rem;
     z-index: 3; 
-    border: 1px solid var(--info);
+    border: 1px solid var(--primary-subtle);
     opacity: .4;
 }
 
@@ -239,16 +248,16 @@ html, body {
 }
 
 a {
-    color: var(--primary) !important;
+    color: var(--info-emphasis) !important;
 }
 
-a:not(.dropdown-item):hover {
-    color: var(--info-emphasis) !important;
+a:not(.dropdown-item, .nav-link):hover {
+    color: var(--secondary-subtle) !important;
     transition: color .3s ease;
 }
 
 footer a {
-    color: var(--primary) !important;
+    color: var(--info-emphasis) !important;
 }
 
 footer a:hover {
@@ -269,14 +278,14 @@ footer a:hover {
     }
 
     #search-bar {
-        position: unset;  /* Remove relative positioning */
-        top: unset;       /* Clear the top property */
-        left: unset;      /* Clear the left property */
-        /* width: 100%; */
+        position: unset;
+        top: unset;
+        left: unset;
+        padding-top: 10px;
     }
 
     .navbar-nav {
-        padding: .5rem;
+        padding: 1rem;
     }
     
 }
