@@ -24,6 +24,7 @@ html, body {
     --info: #149911;
     --info-subtle: #EBF9FF;
     --info-emphasis: #1EFC1E;
+    --link-color: #080744;
 }
 
 .container-fluid {
@@ -257,7 +258,7 @@ a:not(.dropdown-item, .nav-link):hover {
 }
 
 footer a {
-    color: var(--info-emphasis) !important;
+    color: var(--link-color) !important;
 }
 
 footer a:hover {
