@@ -107,16 +107,22 @@
                                 </li>
                             </ul>
                         </li>
+                            
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
-                                ACADEMICS
+                              ACADEMICS
                             </a>
-                            <ul class="dropdown-menu overflow-hidden p-0">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                            <ul class="dropdown-menu p-0">
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                    DEPARTMENTS
+                                    </a>
+                                    <ul class="dropdown-menu p-0 position-abs mt-0">
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                        <li><a class="dropdown-item" href="#">Economics</a></li>
+                                        <li><a class="dropdown-item" href="#">Information Technology</a></li>
+                                        <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -962,4 +968,37 @@ $(document).ready(function(){
     
 })
 </script>
-</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const submenuToggles = document.querySelectorAll('.dropdown-submenu-toggle');
+    
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent Bootstrap from closing dropdown
+    
+                const submenu = this.nextElementSibling;
+    
+                // Toggle this submenu
+                submenu.classList.toggle('show');
+    
+                // Close other open submenus (optional)
+                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(menu => {
+                    if (menu !== submenu) {
+                        menu.classList.remove('show');
+                    }
+                });
+            });
+        });
+    
+        // Optional: Close all submenus when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown-submenu')) {
+                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(menu => {
+                    menu.classList.remove('show');
+                });
+            }
+        });
+    });
+    </script>
+    </html>
