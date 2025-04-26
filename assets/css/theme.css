@@ -151,8 +151,13 @@ html, body {
 }
 
 .logo {
-    width: 10rem;
+    width: 6rem;
+    height: 6rem;
     margin-bottom: 1rem;
+}
+
+.logo-text-sm {
+    font-size: .8rem !important;
 }
 
 .banner-container {
@@ -252,7 +257,7 @@ a {
     color: var(--info-emphasis) !important;
 }
 
-a:not(.dropdown-item, .nav-link):hover {
+a:not(.dropdown-item, .nav-link, .logo-text):hover {
     color: var(--secondary-subtle) !important;
     transition: color .3s ease;
 }
@@ -348,8 +353,13 @@ footer a:hover {
         width: 75% !important;
     }    
 
-    .logo {
-        width: 8rem;
+    .logo-text {
+        font-size: 1rem !important;
+    }
+
+    .logo-text-sm {
+        font-size: .6rem !important;
+        margin-top: 2px;
     }
     
     .banner-container {

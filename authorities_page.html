@@ -18,14 +18,15 @@
     <!-- HEADER START -->
     <header class="bg-primary">
         <nav class="navbar navbar-primary navbar-dark navbar-expand-lg position-relative">
-            <div class="container-fluid logo-container bg-primary">
-                <div class="col-md-5 text-lg-center">
-                    <a href="./assets/index.html" class="navbar-brand m-2 mt-3">
-                        <img src="./assets/images/usindh-logo-white.png" class="logo" alt="USindh Logo">
-                    </a>
-                </div>
+            <div class="container-fluid logo-container bg-primary p-0">
+                <article class="col-md-5 d-flex align-items-center justify-content-center pb-0 mb-0">
+                    <a href="" class="text-decoration-none me-0"><img alt="University of Sindh logo" class="logo" src="https://usindh.edu.pk/images/usindh/logo.png"></a>
+                    <div class="p-0" style='text-align:left;'>
+                      <h5><a href="" class='text-decoration-none text-white logo-text'>University of Sindh</br>Jamshoro<br><span class="logo-text-sm">The oldest University of the country<span></a></h5>
+                    </div>
+                  </article>
                 
-                <button class="navbar-toggler position-absolute" style="top: 5px; right: 10px;" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler position-absolute" style="top: 25px; right: 10px;" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -34,7 +35,7 @@
             <div class="container">
                 <div class="collapse navbar-collapse bg-primary" id="nav-list">
                     <div class="col-12 col-lg-4 me-auto" id="search-bar">
-                        <form class="d-flex w-100 position-relative rounded-5 mb-1" role="search">
+                        <form class="d-flex w-100 position-relative rounded-5" role="search">
                             <input class="form-control rounded-5 me-2 search-box" type="search" placeholder="Ex: Admissions" aria-label="Search">
                             <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
                                 <img class="d-block m-auto" src="./assets/images/search-icon.png" alt="search icon image">
@@ -77,16 +78,21 @@
                                 </li>
                             </ul>
                         </li>
+                            
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
-                                ACADEMICS
+                              ACADEMICS
                             </a>
-                            <ul class="dropdown-menu overflow-hidden p-0">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                            <ul class="dropdown-menu p-0">
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                    DEPARTMENTS
+                                    </a>
+                                    <ul class="dropdown-menu p-0 position-abs mt-0">
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                        <li><a class="dropdown-item" href="#">Information Technology</a></li>
+                                        <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -464,5 +470,38 @@
             }
         });
     })
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const submenuToggles = document.querySelectorAll('.dropdown-submenu-toggle');
+    
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent Bootstrap from closing dropdown
+    
+                const submenu = this.nextElementSibling;
+    
+                // Toggle this submenu
+                submenu.classList.toggle('show');
+    
+                // Close other open submenus (optional)
+                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(menu => {
+                    if (menu !== submenu) {
+                        menu.classList.remove('show');
+                    }
+                });
+            });
+        });
+    
+        // Optional: Close all submenus when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown-submenu')) {
+                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(menu => {
+                    menu.classList.remove('show');
+                });
+            }
+        });
+    });
 </script>
 </html>
