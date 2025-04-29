@@ -27,6 +27,23 @@ html, body {
     --link-color: #080744;
 }
 
+a {
+    color: var(--info-emphasis) !important;
+}
+
+a:not(.dropdown-item, .nav-link, .logo-text):hover {
+    color: var(--secondary-subtle) !important;
+    transition: color .3s ease;
+}
+
+footer a {
+    color: var(--link-color) !important;
+}
+
+footer a:hover {
+    color: var(--info-emphasis) !important;
+}
+
 .container-fluid {
     padding: 0px !important;
 }
@@ -179,6 +196,19 @@ html, body {
     z-index: 1000;
 }
 
+.nav-link {
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    border-radius: 0px !important;
+}
+
+.dropdown-item{
+    background-color: #2e89e5;
+    color: #fff !important;
+}
+
 .nav-link, .dropdrown-item {
     transition: color .3s ease;
     font-size: .9em !important;
@@ -251,23 +281,6 @@ html, body {
 .card-img-top {
     object-fit: cover;
     aspect-ratio: 3/4 !important;
-}
-
-a {
-    color: var(--info-emphasis) !important;
-}
-
-a:not(.dropdown-item, .nav-link, .logo-text):hover {
-    color: var(--secondary-subtle) !important;
-    transition: color .3s ease;
-}
-
-footer a {
-    color: var(--link-color) !important;
-}
-
-footer a:hover {
-    color: var(--info-emphasis) !important;
 }
 
 @media only screen and (max-width: 998px) {
