@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box !important;
+}
+
+:root {
+    --primary: #034078;
+    --primary-subtle: #1ea8e4;
+    --secondary: #BCD8C1;
+    --secondary-subtle: #247BA0;
+    --info: #149911;
+    --info-subtle: #EBF9FF;
+    --info-emphasis: #1EFC1E;
+}
+
+html, body {
+    overflow: hidden !important;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+[class*="primary"] {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+[class*="info"] {
+    background-color: var(--info) !important;
+    border-color: var(--info) !important;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.bg-light {
+    background-color: rgba(0, 51, 102, .8) !important;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.error {
+    color: red;
+    font-size: .8em;
+}
+
+@media only screen and (max-width: 998px) {
+    html, body {
+        font-size: 90% !important;
+        overflow-y: scroll;
+    }
+
+    .section-height {
+        height: auto !important;
+    }
+}
+
+@media only screen and (min-width: 767px){
+
+    html, body {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    html {
+        font-size: .7em;
+    }
+}
+
+
+@media only screen and (max-height: 500px){
+    html {
+        font-size: 60% !important;
+    }
+
+    .section-height {
+        display: block;
+        /* max-height: 320px !important; */
+    }
+}

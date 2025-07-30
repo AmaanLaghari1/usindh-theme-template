@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="University of Sindh Jamshoro">
+    <meta name="copyright" content="University of Sindh Jamshoro">
+    <meta name="revisit-after" content="1 days">
+    <meta name="rating" content="general">
+    <meta name="language" content="English">
+    <meta name="distribution" content="global">
+    <meta name="subject" content="University of Sindh Jamshoro">
+    <meta name="url" content="https://usindh.edu.pk/">
+    <meta name="developer" content="Amaanullah Khan Laghari">
+    <meta name="description"
+        content="University of Sindh Jamshoro is a public university located in Jamshoro, Sindh, Pakistan. It is one of the oldest universities in Pakistan, established in 1947. The university offers undergraduate, graduate, and doctoral programs across various disciplines including arts, sciences, engineering, and social sciences. The campus is known for its beautiful architecture and lush green surroundings.">
+    <meta name="keywords" content="University, Sindh, Jamshoro, Admissions, LMS, Research, Academics">
+    <title>USindh - Learning Management System</title>
+    <link rel="stylesheet" href="./assets/css/font-6/css/all.css">
+    <link rel="stylesheet" href="./assets/css/google-fonts.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <style>
+        .col-img {
+            height: 27rem !important;
+        }
+
+        .lms-link-card {
+            height: 10rem;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+            transition: color .3s ease;
+        }
+
+        .lms-link-card h5 {
+            color: #000;
+        }
+
+        .lms-link-card.active {
+            background-color: var(--primary);
+            color: #fff;
+        }
+
+        .lms-link-card.active img {
+            filter: invert(1);
+            height: 100% !important;
+        }
+
+        .lms-link-card:hover {
+            background-color: var(--info);
+            color: #fff;
+        }
+
+        .lms-link-card:hover img {
+            filter: invert(1);
+        }
+
+        .lms-link-card:hover h5 {
+            color: #fff !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-img {
+                width: 75%;
+                height: auto !important;
+            }
+
+            .lms-link-card {
+                height: 8rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header class="bg-primary">
+        <nav class="navbar navbar-primary navbar-dark navbar-expand-lg position-relative">
+            <div class="container-fluid logo-container bg-primary p-0">
+                <article class="col-md-5 d-flex align-items-center justify-content-center pb-0 mb-0">
+                    <a href="" class="text-decoration-none me-0"><img alt="University of Sindh logo" class="logo"
+                            src="https://usindh.edu.pk/images/usindh/logo.png"></a>
+                    <div class="p-0" style='text-align:left;'>
+                        <h5><a href="" class='text-decoration-none text-white logo-text'>University of
+                                Sindh</br>Jamshoro<br><span class="logo-text-sm">The oldest University of the
+                                    country<span></a></h5>
+                    </div>
+                </article>
+
+                <button class="navbar-toggler position-absolute" style="top: 25px; right: 10px;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <nav class="py-3 bg-primary navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse bg-primary" id="nav-list">
+                    <div class="col-12 col-lg-4 me-auto" id="search-bar">
+                        <form class="d-flex w-100 position-relative rounded-5" role="search">
+                            <input class="form-control rounded-5 me-2 search-box" type="search"
+                                placeholder="Ex: Admissions" aria-label="Search">
+                            <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
+                                <img class="d-block m-auto" src="./assets/images/search-icon.png"
+                                    alt="search icon image">
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="navbar-nav small d-lg-flex flex-wrap justify-content-evenly w-100">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link active text-light mx-2">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light mx-2">
+                                NEWS
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ABOUT
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="./login_page.html">Login</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./vision_page.html">Vision & Mission</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./authorities_page.html">Authorities of the
+                                        University</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./exam_wing_page.html">Examinations Wing</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./affiliated_colleges_page.html">Inspector of
+                                        Affiliated Colleges</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./lms_page.html">LMS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ACADEMICS
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                        DEPARTMENTS
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item text-light" href="#">English</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">Information Technology</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">Software Engineering</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                        FACULTIES
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item text-light" href="#">ARTS</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">FET</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ADMINISTRATION
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                RESEARCH JOURNALS
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="./lms_page.html" class="nav-link dropdown-toggle text-light mx-2"
+                                data-bs-toggle="dropdown">
+                                LMS
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                FACILITIES
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                GRADING POLICY
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                FACULTIES
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                CAMPUSES
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                        OLD CAMPUS
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item text-light" href="#">Option 1</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">Option 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- BANNER SECTION START -->
+    <section class="banner-container bg-primary position-relative">
+        <div class="container px-2">
+            <div class="text-end">
+                <ul class="list-unstyled d-flex justify-content-end">
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/instagram-vector.png" alt="">
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/facebook-vector.png" alt="">
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/twitter-vector.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="position-relative">
+                <span class="position-absolute rounded-circle circle-shape-sm"></span>
+                <span class="position-absolute rounded-circle circle-shape-lg"></span>
+                <img src="./assets/images/banner.png" alt="banner image" class="img-fluid"
+                    style="position: relative; z-index: 20;">
+
+                <span class="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-100"
+                    style="z-index: 30;">
+                    <div class="bg-info square-shape"></div>
+                    <h1 class="banner-title display-6 position-absolute ps-5 text-light mx-2 m-auto">Learning Management
+                        <br /><span class="fw-bold">System</span></h1>
+                </span>
+                <span class="position-absolute top-50 translate-middle" style="z-index: 21; left: 300px;">
+                </span>
+
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- SECTION BREAK SPACE -->
+    <div class="section-gap"></div>
+    <div class="section-gap"></div>
+    <!-- SECTION BREAK SPACE END -->
+
+    <!-- MAIN SECTION START -->
+    <main class="container-fluid p-0 position-relative">
+        <div class="container">
+
+
+            <div class="section-gap"></div>
+
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="d-flex align-items-center h-100 pe-5">
+                        <div>
+                            <h3 class="text-black fw-bold">Learning Managment System of University of Sindh</h3>
+                            <p class="py-3">
+                                In the age of digital transformation, educational institutions worldwide are harnessing
+                                the power of technology to enhance the learning experience for their students. The
+                                University of Sindh, a renowned institution in Pakistan, has also embraced this wave of
+                                innovation by adopting a state-of-the-art Learning Management System (LMS).
+                            </p>
+                            <h5 class="text-black fw-bold">
+                                The University of Sindh and Its Commitment to Excellence
+                            </h5>
+                            <p class="py-3">
+                                The University of Sindh, founded in 1947, has a rich history of academic excellence and
+                                a tradition of producing graduates who have made significant contributions to society.
+                                The university is committed to providing quality education that prepares students for
+                                the challenges of the modern world. To fulfill this commitment, it has taken significant
+                                steps towards modernizing its educational infrastructure, with the adoption of a
+                                cutting-edge Learning Management System being one of the most pivotal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-0 px-2">
+                    <div class="d-flex overflow-hidden">
+                        <div class="bg-info px-4 py-5 h-25"></div>
+                        <img src="./assets/images/vision_and_mission_tumbnail.png" alt=""
+                            class="img-fluid col-img w-md-75 h-100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-gap"></div>
+
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-12 col-lg-6 p-2">
+                        <div class="lms-link-card w-100 d-flex align-items-center justify-content-center p-3">
+                            <div class="card-body">
+                                <h4 class="fw-bold">LMS Login</h4>
+                                <p class="lead">Learning Management System</p>
+                            </div>
+                            <img src="./assets/images/lms-icon-1.png" class="w-25" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 p-2">
+                        <div class="lms-link-card active w-100 d-flex align-items-center justify-content-center p-3">
+                            <div class="card-body">
+                                <h4 class="fw-bold">Attendance</h4>
+                                <p class="lead">Online Attendance System</p>
+                            </div>
+                            <img src="./assets/images/lms-icon-2.png" class="w-25" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 p-2">
+                        <div class="lms-link-card w-100 d-flex align-items-center justify-content-center p-3">
+                            <div class="card-body">
+                                <h4 class="fw-bold">Result</h4>
+                                <p class="lead">Online Result Management System</p>
+                            </div>
+                            <img src="./assets/images/lms-icon-3.png" class="w-25" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 p-2">
+                        <div class="lms-link-card w-100 d-flex align-items-center justify-content-center p-3">
+                            <div class="card-body">
+                                <h4 class="fw-bold">DRGS</h4>
+                                <p class="lead">Online Postgraduate DRGS System</p>
+                            </div>
+                            <img src="./assets/images/lms-icon-4.png" class="w-25" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-gap"></div>
+
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container-fluid text-light bg-primary-subtle p-3 py-5 position-relative">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-3 p-2">
+                        <img src="./assets/images/usindh-logo-white.png" style="width: 10rem;" alt="USindh Logo">
+                        <p class="small py-3">
+                            The University of Sindh, the oldest University of the country, was constituted under the
+                            University of Sindh Act. No. XVII of 1947 passed by the Legislative Assembly of Sindh. The
+                            Act was subsequently revised and modified in 1961 and later.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Quick Links</h6>
+                            <ul class="list-unstyled small">
+                                <li><a class="text-decoration-none" href="#">Convocation 2019-2023</a></li>
+                                <li><a class="text-decoration-none" href="#">Sindh University Testing</a></li>
+                                <li><a class="text-decoration-none" href="#">Centre Office of Research & Innovation</a>
+                                </li>
+                                <li><a class="text-decoration-none" href="#">Commercialisation Quality Enhancement</a>
+                                </li>
+                                <li><a class="text-decoration-none" href="#">Cell Director of Admissions</a></li>
+                                <li><a class="text-decoration-none" href="#">Knowledge</a></li>
+                                <li><a class="text-decoration-none" href="#">Corridor Spectrum Magazine</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Connect</h6>
+                            <ul class="list-unstyled small">
+                                <li><a class="text-decoration-none" href="#">News & Events</a></li>
+                                <li><a class="text-decoration-none" href="#">Sindh University Journol Online</a></li>
+                                <li><a class="text-decoration-none" href="#">Prospectus 2024</a></li>
+                                <li><a class="text-decoration-none" href="#">Career Opportnities</a></li>
+                            </ul>
+
+                            <div class="py-2">
+                                <div class="social-links-container">
+                                    <ul class="list-unstyled d-flex">
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/instagram-vector.png"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/facebook-vector.png"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/twitter-vector.png"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Contact</h6>
+                            <ul class="list-unstyled small">
+                                <li class="d-flex align-items-center">
+                                    <div class="p-2 ps-0">
+                                        <i class="fa-solid fa-phone" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="tel:92229213181">
+                                        92-22-9213-181 (90)
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="px-2 ps-0 align-self-start">
+                                        <i class="fa-solid fa-location-dot" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="#">
+                                        University of Sindh,Allama I.I. Kazi Campus,Jamshoro-76080, Sindh, Pakistan
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="p-2 ps-0">
+                                        <i class="fa-solid fa-envelope" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="mailto:info@usindh.edu.pk">
+                                        info@usindh.edu.pk
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small bg-primary d-flex flex-wrap justify-content-around align-items-center text-light p-4">
+            <small>All rights Reserved © University Of Sindh 2024</small>
+            <small>Privacy Policy | Terms of Services</small>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<script src="./assets/js/popper.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".nav-link").click(function () {
+            if (!$(this).hasClass('active')) {
+                $(".nav-link").removeClass('active')
+
+
+                $(this).addClass('active')
+
+            }
+        })
+
+        $(window).on("scroll", function () {
+            if ($(this).scrollTop() > 20) {
+                $("#nav-list").addClass("fixed-top pt-5");
+                if ($(this).width() < 998) {
+                    $("#nav-list").removeClass("pt-5");
+                    $("#search-bar").addClass("pt-5 mt-3");
+                    $(".logo-container").addClass("fixed-top");
+                }
+            } else {
+                $("#nav-list").removeClass("fixed-top pt-5");
+                $("#search-bar").removeClass("pt-5 mt-3");
+                $(".logo-container").removeClass("fixed-top");
+            }
+        });
+
+        $(".lms-link-card").click(function () {
+            if (!$(this).hasClass('active')) {
+                $(".lms-link-card").removeClass('active')
+
+
+                $(this).addClass('active')
+
+            }
+        })
+
+        // Dropdown Handler
+        const $submenuToggles = $('.dropdown-submenu-toggle');
+
+        $submenuToggles.on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation(); // Prevent Bootstrap from closing the dropdown
+
+            const $submenu = $(this).next('.dropdown-menu');
+
+            if ($submenu.length === 0) return;
+
+            // Toggle this submenu
+            $submenu.toggleClass('show');
+
+            // Autoflip logic: reset first
+            $submenu.css({ left: '', right: '', top: '0' });
+
+            const rect = $submenu[0].getBoundingClientRect();
+
+            // If overflow, flip to open left
+            if ((rect.width + rect.right) > $(window).outerWidth()) {
+                $submenu.css({ left: 'auto', right: '100%' });
+            } else {
+                $submenu.css({ left: '100%', right: 'auto' });
+            }
+
+            // Close other open submenus
+            $('.dropdown-submenu .dropdown-menu').not($submenu).each(function () {
+                $(this).removeClass('show').css({ left: '', right: '' });
+            });
+        });
+
+        // Close all submenus when clicking outside
+        $(document).on('click', function (e) {
+            if ($(e.target).closest('.dropdown-submenu').length === 0) {
+                $('.dropdown-submenu .dropdown-menu').removeClass('show').css({ left: '', right: '' });
+            }
+        });
+
+    })
+</script>
+</html>

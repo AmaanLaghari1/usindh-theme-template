@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="University of Sindh Jamshoro">
+    <meta name="copyright" content="University of Sindh Jamshoro">
+    <meta name="revisit-after" content="1 days">
+    <meta name="rating" content="general">
+    <meta name="language" content="English">
+    <meta name="distribution" content="global">
+    <meta name="subject" content="University of Sindh Jamshoro">
+    <meta name="url" content="https://usindh.edu.pk/">
+    <meta name="developer" content="Amaanullah Khan Laghari">
+    <meta name="description" content="University of Sindh Jamshoro is a public university located in Jamshoro, Sindh, Pakistan. It is one of the oldest universities in Pakistan, established in 1947. The university offers undergraduate, graduate, and doctoral programs across various disciplines including arts, sciences, engineering, and social sciences. The campus is known for its beautiful architecture and lush green surroundings.">
+    <meta name="keywords" content="University, Sindh, Jamshoro, Admissions, LMS, Research, Academics">
+    <title>USindh - Login</title>
+    <link rel="stylesheet" href="./assets/css/font-6/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+    <main class="bg-primary container-fluid align-content-center p-0">
+        <div class="row p-3">
+            <div class="col-lg-6 d-none d-lg-block align-content-center">
+                <img class="d-block mx-auto w-75" src="./assets/images/login_thumbnail.png" alt="">
+            </div>
+            <div class="col-lg-6 section-height p-4 bg-white rounded-5">
+                <div class="d-flex h-100 justify-content-center align-items-center flex-column py-4">
+                    <form action="" class="col-10 col-md-8 mx-auto" id="login-form" method="post">
+                        <div class="navbar-brand">
+                            <img src="./assets/images/logo.png" style="width: 14rem;" alt="">
+                        </div>
+                        <h5 class="my-4">Login Account</h5>
+                        <div class="form-group my-2">
+                            <label for="cnic" class="form-label mx-2">CNIC</label>
+                            <input type="text" class="form-control form-control" id="cnic" name="cnic" placeholder="CNIC Number">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="password" class="form-label mx-2">Password</label>
+                            <div class="position-relative">
+                                <input type="password" class="form-control form-control" id="password" name="password" placeholder="Password">
+                                
+                                <span class="position-absolute top-50"  style="right: 10px; transform: translateY(-50%); cursor: pointer;">
+                                    <i id="eyeIcon" class="fa fa-eye small"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="form-check form-switch my-2">
+                                <input style="margin-top: 7px;" class="form-check-input small me-1" type="checkbox" role="switch" id="remember">
+                                <label class="form-check-label small" for="remember"><small> Remember Me</small></label>
+                            </div>
+                            <div>
+                                <a href="#" class="small text-decoration-none"><small>Forgot Password?</small></a>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-dark w-100 my-3 p-1">Login</button>
+                        <!-- <div class="m-1">
+                            <small class="small">already have an account? </small><a href="#" class="small text-decoration-none"><small>Signup</small></a>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/jquery-validate.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $(`#cnic`).on("input", function(){
+        $(this).val($(this).val().replace(/[^0-9]/g, ''))
+        let maxLength = 13
+        if(maxLength > 0){
+            $(this).val($(this).val().substr(0, maxLength));
+        }
+    })
+    
+    $("#eyeIcon").click(function(){
+        if($("#password").attr('type') === 'password'){
+            $("#password").attr('type', 'text')
+            $(this).removeClass('fa-eye')
+            $(this).addClass('fa-eye-slash')
+        }
+        else {
+            $("#password").attr('type', 'password')
+            $(this).addClass('fa-eye')
+            $(this).removeClass('fa-eye-slash')
+        }
+    })
+
+    $("#login-form").validate({
+        rules: {
+            cnic: {
+                required: true,
+                minlength: 13
+            },
+            password: {
+                required: true
+            }
+        },
+        messages: {
+            cnic: {
+                required: "Please enter your CNIC number",
+                minlength: "CNIC number must be 13 digits long"
+            },
+            password: {
+                required: "Please enter your password",
+            }
+        },
+        errorPlacement: function(error, element) {
+            error.insertAfter(element.closest('.form-group'));
+        },
+    })
+})
+</script>
+</html>

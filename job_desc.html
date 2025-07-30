@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="University of Sindh Jamshoro">
+    <meta name="copyright" content="University of Sindh Jamshoro">
+    <meta name="revisit-after" content="1 days">
+    <meta name="rating" content="general">
+    <meta name="language" content="English">
+    <meta name="distribution" content="global">
+    <meta name="subject" content="University of Sindh Jamshoro">
+    <meta name="url" content="<?=base_url()?>">
+    <meta name="developer" content="Amaanullah Khan Laghari">
+    <meta name="description"
+        content="University of Sindh Jamshoro is a public university located in Jamshoro, Sindh, Pakistan. It is one of the oldest universities in Pakistan, established in 1947. The university offers undergraduate, graduate, and doctoral programs across various disciplines including arts, sciences, engineering, and social sciences. The campus is known for its beautiful architecture and lush green surroundings.">
+    <meta name="keywords" content="University, Sindh, Jamshoro, Admissions, LMS, Research, Academics">
+    <title>USindh - Examinations Wing</title>
+    <link rel="stylesheet" href="./assets/css/font-6/css/all.css">
+    <link rel="stylesheet" href="./assets/css/google-fonts.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header class="bg-primary">
+        <nav class="navbar navbar-primary navbar-dark navbar-expand-lg position-relative">
+            <div class="container-fluid logo-container bg-primary p-0">
+                <article class="col-md-5 d-flex align-items-center justify-content-center pb-0 mb-0">
+                    <a href="" class="text-decoration-none me-0"><img alt="University of Sindh logo" class="logo"
+                            src="<?=base_url()?>images/usindh/logo.png"></a>
+                    <div class="p-0" style='text-align:left;'>
+                        <h5><a href="" class='text-decoration-none text-white logo-text'>University of
+                                Sindh</br>Jamshoro<br><span class="logo-text-sm">The oldest University of the
+                                    country<span></a></h5>
+                    </div>
+                </article>
+
+                <button class="navbar-toggler position-absolute" style="top: 25px; right: 10px;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <nav class="py-3 bg-primary navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse bg-primary" id="nav-list">
+                    <div class="col-12 col-lg-4 me-auto" id="search-bar">
+                        <form class="d-flex w-100 position-relative rounded-5" role="search">
+                            <input class="form-control rounded-5 me-2 search-box" type="search"
+                                placeholder="Ex: Admissions" aria-label="Search">
+                            <button class="btn btn-info h-100 position-absolute end-0 rounded-circle" type="submit">
+                                <img class="d-block m-auto" src="./assets/images/search-icon.png"
+                                    alt="search icon image">
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="navbar-nav small d-lg-flex flex-wrap justify-content-evenly w-100">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link active text-light mx-2">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light mx-2">
+                                NEWS
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ABOUT
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="./login_page.html">Login</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./vision_page.html">Vision & Mission</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./authorities_page.html">Authorities of the
+                                        University</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./exam_wing_page.html">Examinations Wing</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./affiliated_colleges_page.html">Inspector of
+                                        Affiliated Colleges</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./lms_page.html">LMS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ACADEMICS
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                        DEPARTMENTS
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item text-light" href="#">English</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">Information Technology</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">Software Engineering</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                        FACULTIES
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item text-light" href="#">ARTS</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">FET</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                ADMINISTRATION
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                RESEARCH JOURNALS
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="./lms_page.html" class="nav-link dropdown-toggle text-light mx-2"
+                                data-bs-toggle="dropdown">
+                                LMS
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                FACILITIES
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                GRADING POLICY
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                FACULTIES
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-light mx-2" data-bs-toggle="dropdown">
+                                CAMPUSES
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li class="dropdown-submenu position-relative">
+                                    <a href="#" class="dropdown-item dropdown-toggle dropdown-submenu-toggle">
+                                        OLD CAMPUS
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item text-light" href="#">Option 1</a></li>
+                                        <li><a class="dropdown-item text-light" href="#">Option 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- BANNER SECTION START -->
+    <section class="banner-container bg-primary position-relative">
+        <div class="container px-2">
+            <div class="text-end">
+                <ul class="list-unstyled d-flex justify-content-end">
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/instagram-vector.png" alt="">
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/facebook-vector.png" alt="">
+                        </a>
+                    </li>
+                    <li class="m-1">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-link-icon" src="./assets/images/twitter-vector.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="position-relative">
+                <span class="position-absolute rounded-circle circle-shape-sm"></span>
+                <span class="position-absolute rounded-circle circle-shape-lg"></span>
+                <img src="./assets/images/banner.png" alt="banner image" class="img-fluid"
+                    style="position: relative; z-index: 20;">
+
+                <span class="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-100"
+                    style="z-index: 30;">
+                    <div class="bg-info square-shape"></div>
+                    <h1 class="banner-title display-6 position-absolute ps-5 text-light mx-2 m-auto">Examinations <span
+                            class="fw-bold">Wing</span></h1>
+                </span>
+                <span class="position-absolute top-50 translate-middle" style="z-index: 21; left: 300px;">
+                </span>
+
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- SECTION BREAK SPACE -->
+    <div class="section-gap"></div>
+    <div class="section-gap"></div>
+    <!-- SECTION BREAK SPACE END -->
+
+
+
+    <!-- MAIN SECTION START -->
+    <main class="container-fluid p-0 position-relative">
+        <div class="container px-2">
+
+
+            <div class="section-gap"></div>
+
+            <div>
+                <p>
+                    <span class="h1 text-primary">
+                        Teaching Assistant Required at the Institute of Gender Studies, University of Sindh, Jamshoro
+                    </span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="section-gap"></div>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="w-100 border border-2 border-primary rounded-0 p-3">
+                            <div class="w-100 border border-primary rounded-0 w-100 p-3">
+                                <div>
+                                    <p>Applications are invited for the Temporary/contract&nbsp;<strong>One (01) post
+                                            of&nbsp;Teaching Assistant&nbsp;in the Institute of Gender Studies,
+                                            University of Sindh, Jamshoro.</strong></p>
+                                    <p>The applicants should possess First Class or&nbsp;3.0 CGPA in BS (4 years) /
+                                        Master’s degree / M.Phil degree in Gender Studies from any HEC recognized
+                                        University and having no 3rd division / D grade in the academic career.</p>
+
+                                    <p>The candidates are required to submit their application on the prescribed
+                                        application form (editable) given below with a coloured photograph (pasted on
+                                        the form) in the office of the undersigned latest by&nbsp;<strong>September 4th,
+                                            2024 by 3:00 pm&nbsp;</strong>along with attested copies of the following
+                                        documents.</p>
+                                    <p>&nbsp;</p>
+                                    <p><a
+                                            href="<?=base_url()?>usindh/../resource/upload_pdfs/3_Teaching-Assitant-Form_1680164231_.pdf"><img
+                                                src="<?=base_url()?>usindh/../resource/upload_images/3_download-pdf_1690438118_.png"
+                                                alt="" decoding="async"></a></p>
+                                    <ol>
+                                        <li>Certificates/testimonials</li>
+                                        <li>Passport-sized photographs (02 copies)</li>
+                                        <li>CNIC</li>
+
+                                        <li>Domicile/PRC</li>
+
+                                    </ol>
+                                    <p><br>
+                                        Only shortlisted candidates will be contacted for written test/interviews. The
+                                        University of Sindh reserves the right to cancel some or all the vacancies.</p>
+                                    <p>&nbsp;</p>
+                                    <p><strong>Prof. Dr. Misbah Bibi Qureshi</strong><strong></strong><br>
+                                        Director<br>
+                                        Institute of Gender Studies<br>
+                                        University of Sindh, Jamshoro
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <b style="color: rgb(8, 82, 148);">
+                    <a href="<?=base_url()?>page/29">
+                        Back to Career Opportunities Page
+                    </a>
+                </b>
+            </div>
+        </section>
+
+        <div class="section-gap"></div>
+    </main>
+    <!-- MAIN SECTION END -->
+
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container-fluid text-light bg-primary-subtle p-3 py-5 position-relative">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-3 p-2">
+                        <img src="./assets/images/usindh-logo-white.png" style="width: 10rem;" alt="USindh Logo">
+                        <p class="small py-3">
+                            The University of Sindh, the oldest University of the country, was constituted under the
+                            University of Sindh Act. No. XVII of 1947 passed by the Legislative Assembly of Sindh. The
+                            Act was subsequently revised and modified in 1961 and later.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Quick Links</h6>
+                            <ul class="list-unstyled small">
+                                <li><a class="text-decoration-none" href="#">Convocation 2019-2023</a></li>
+                                <li><a class="text-decoration-none" href="#">Sindh University Testing</a></li>
+                                <li><a class="text-decoration-none" href="#">Centre Office of Research & Innovation</a>
+                                </li>
+                                <li><a class="text-decoration-none" href="#">Commercialisation Quality Enhancement</a>
+                                </li>
+                                <li><a class="text-decoration-none" href="#">Cell Director of Admissions</a></li>
+                                <li><a class="text-decoration-none" href="#">Knowledge</a></li>
+                                <li><a class="text-decoration-none" href="#">Corridor Spectrum Magazine</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Connect</h6>
+                            <ul class="list-unstyled small">
+                                <li><a class="text-decoration-none" href="#">News & Events</a></li>
+                                <li><a class="text-decoration-none" href="#">Sindh University Journol Online</a></li>
+                                <li><a class="text-decoration-none" href="#">Prospectus 2024</a></li>
+                                <li><a class="text-decoration-none" href="#">Career Opportnities</a></li>
+                            </ul>
+
+                            <div class="py-2">
+                                <div class="social-links-container">
+                                    <ul class="list-unstyled d-flex">
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/instagram-vector.png"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/facebook-vector.png"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="m-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <img class="social-link-icon" src="./assets/images/twitter-vector.png"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="ps-5">
+                            <h6>Contact</h6>
+                            <ul class="list-unstyled small">
+                                <li class="d-flex align-items-center">
+                                    <div class="p-2 ps-0">
+                                        <i class="fa-solid fa-phone" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="tel:92229213181">
+                                        92-22-9213-181 (90)
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="px-2 ps-0 align-self-start">
+                                        <i class="fa-solid fa-location-dot" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="#">
+                                        University of Sindh,Allama I.I. Kazi Campus,Jamshoro-76080, Sindh, Pakistan
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="p-2 ps-0">
+                                        <i class="fa-solid fa-envelope" style="color: #fff;"></i>
+                                    </div>
+                                    <a class="text-decoration-none" href="mailto:info@usindh.edu.pk">
+                                        info@usindh.edu.pk
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small bg-primary d-flex flex-wrap justify-content-around align-items-center text-light p-4">
+            <small>All rights Reserved © University Of Sindh 2024</small>
+            <small>Privacy Policy | Terms of Services</small>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<script src="./assets/js/popper.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".nav-link").click(function () {
+            if (!$(this).hasClass('active')) {
+                $(".nav-link").removeClass('active')
+
+
+                $(this).addClass('active')
+
+            }
+        })
+
+        $(window).on("scroll", function () {
+            if ($(this).scrollTop() > 20) {
+                $("#nav-list").addClass("fixed-top pt-5");
+                if ($(this).width() < 998) {
+                    $("#nav-list").removeClass("pt-5");
+                    $("#search-bar").addClass("pt-5 mt-3");
+                    $(".logo-container").addClass("fixed-top");
+                }
+            } else {
+                $("#nav-list").removeClass("fixed-top pt-5");
+                $("#search-bar").removeClass("pt-5 mt-3");
+                $(".logo-container").removeClass("fixed-top");
+            }
+        });
+
+        // Dropdown Handler
+        const $submenuToggles = $('.dropdown-submenu-toggle');
+
+        $submenuToggles.on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation(); // Prevent Bootstrap from closing the dropdown
+
+            const $submenu = $(this).next('.dropdown-menu');
+
+            if ($submenu.length === 0) return;
+
+            // Toggle this submenu
+            $submenu.toggleClass('show');
+
+            // Autoflip logic: reset first
+            $submenu.css({ left: '', right: '', top: '0' });
+
+            const rect = $submenu[0].getBoundingClientRect();
+
+            // If overflow, flip to open left
+            if ((rect.width + rect.right) > $(window).outerWidth()) {
+                $submenu.css({ left: 'auto', right: '100%' });
+            } else {
+                $submenu.css({ left: '100%', right: 'auto' });
+            }
+
+            // Close other open submenus
+            $('.dropdown-submenu .dropdown-menu').not($submenu).each(function () {
+                $(this).removeClass('show').css({ left: '', right: '' });
+            });
+        });
+
+        // Close all submenus when clicking outside
+        $(document).on('click', function (e) {
+            if ($(e.target).closest('.dropdown-submenu').length === 0) {
+                $('.dropdown-submenu .dropdown-menu').removeClass('show').css({ left: '', right: '' });
+            }
+        });
+
+    })
+</script>
+
+</html>

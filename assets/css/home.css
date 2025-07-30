@@ -1,0 +1,100 @@
+.headline p {
+    font-size: 1em !important;
+}
+
+.fa-arrow-right {
+    color: #fff;
+    z-index: 100;
+}
+
+.img-icon-box {
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Career-Opportunities {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+/* .icon-card { */
+    /* max-width: 16rem !important; */
+/* } */
+
+.swiper-pagination {
+    position: static !important;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--secondary);
+  border-radius: 0;
+  opacity: 1;
+  background: transparent !important;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: var(--info) !important;
+}
+
+[class*="swiper-arrow"] {
+    color: var(--secondary);
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+[class*="swiper-arrow"]:hover {
+    color: var(--info);
+}
+
+
+.swiper .card {
+    height: 18rem;
+}
+
+.swiper .card .card-img-top {
+    height: 11rem;
+}
+
+.icon-card {
+    padding: 5px;
+}
+
+.official-img {
+    height: 12rem;
+    width: 12rem;
+}
+
+.news-img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.gallery-container {
+    height: 30rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .headline p, .headline a {
+        font-size: .6em !important;
+    }
+    
+    .img-icon-box {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .gallery-container {
+        height: 15rem;
+    }
+}
